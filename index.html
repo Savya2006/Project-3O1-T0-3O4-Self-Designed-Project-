@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Art Gallery</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Loading Assets  -->
+      <a-a-assets>
+        <a-asset-item id="a" src="assests/Main_One/scene.gltf"></a-asset-item>
+      </a-a-assets>
+      <a-sky color="black"></a-sky>
+
+     
+      <a-entity scale="5 5 5" gltf-model="#a" position="5 0 5" shadow="cast:true;" rotation="0 0 0 "> </a-entity>
+
+      
+
+      <!-- CAMERA -->
+      <a-camera look-controls-enabled wasd-controls-enabled position="20 25 30"> </a-camera>
+
+
+    </a-scene>
+  </body>
+</html>
